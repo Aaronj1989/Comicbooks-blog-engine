@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE urlrewrite
+        PUBLIC "-//tuckey.org//DTD UrlRewrite 3.0//EN"
+        "http://www.tuckey.org/res/dtds/urlrewrite3.0.dtd">
+        
+        
+<urlrewrite>
+<rule>
+<from>article/(.*)</from>
+<to type="redirect">comic-books/articleview/*</to>
+</rule>
+</urlrewrite>

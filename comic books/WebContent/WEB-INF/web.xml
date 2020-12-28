@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+
+
+<servlet>
+<servlet-name>home</servlet-name>
+<servlet-class>com.lumar.controllers.HomeServlet</servlet-class>
+</servlet>
+
+<servlet>
+<servlet-name>article</servlet-name>
+<servlet-class>com.lumar.controllers.ArticleServletController</servlet-class>
+</servlet>
+
+<!-- admin controlls -->
+<servlet>
+<servlet-name>admin-controller</servlet-name>
+<servlet-class>com.lumar.controllers.AdminController</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>home</servlet-name>
+<url-pattern>/home</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+<servlet-name>article</servlet-name>
+<url-pattern>/article/*</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+<servlet-name>article</servlet-name>
+<url-pattern>/articleview/*</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+<servlet-name>admin-controller</servlet-name>
+<url-pattern>/admin/*</url-pattern>
+</servlet-mapping>
+
+<listener>
+<listener-class>
+com.lumar.resources.HeaderNavigationService
+</listener-class>
+</listener>
+
+ <listener>
+<listener-class>
+com.lumar.resources.FeatureDisplayService
+</listener-class>
+</listener>
+
+ <listener>
+<listener-class>
+com.lumar.resources.URLMapListener
+</listener-class>
+</listener>
+
+
+<context-param>
+<param-name>jdbcURL</param-name>
+<param-value>jdbc:mysql://localhost:3306/comicweb</param-value>
+</context-param>
+<context-param>
+<param-name>username</param-name>
+<param-value>root</param-value>
+</context-param>
+<context-param>
+<param-name>password</param-name>
+<param-value>student</param-value>
+</context-param>
+</web-app>

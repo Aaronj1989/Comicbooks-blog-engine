@@ -1,0 +1,29 @@
+@charset "ISO-8859-1";
+
+
+.footer-container{
+    display:inline-block;
+	background-color: #23302f;
+	width:100%;
+	padding-left:250px;
+
+	
+}
+
+li{
+list-style-type: none;
+}
+
+a{
+	color:grey;
+}
+
+.social-container h3{
+position:relative;
+left:40px;
+color:white;
+	
+}
+.social-nav li{
+	display:inline;
+} 

@@ -1,0 +1,151 @@
+@charset "ISO-8859-1";
+
+.category-title {
+	position: relative;
+	display: block;
+	left: 240px;
+}
+
+body {
+	position: relative;
+	min-height: 100vh;
+}
+
+.mdl-card {
+	display: inline-block;
+}
+
+.mdl-card img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+.featured-comics-container {
+	width: 60%;
+}
+
+
+.feature-promo {
+	display: inline-block;
+	position: relative;
+	left: 200px;
+	bottom: 240px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.feature-promo h3 {
+	color: darkgrey;
+}
+
+.holiday {
+	color: black;
+	background: url('../img/holiday banner.png') no-repeat center center;
+	background-size: cover;
+	height: 100%;
+	padding: 40px;
+	box-sizing: border-box;
+}
+
+.holiday div {
+	position: relative;
+	left: 140px;
+	top: 30px;
+	color: white;
+	height: 400px;
+}
+
+.feature-item-title {
+	display: inline-block;
+	position: relative;
+	left: 25px;
+	font-family: 'Trocchi', serif;
+}
+
+
+/* article list portion */
+
+.articles-list-container {
+	position:relative;
+	width: 65%;
+	margin:auto;
+
+}
+
+.article-container {
+	position:relative;
+	display: flex;
+    flex-direction:row;
+	margin-top: 30px;
+	border-bottom: 1px solid darkgrey;
+	width: 100%;
+	
+}
+
+.article-container a{
+	display:inline-block;
+	height:200px;
+	margin-right:10px;
+}
+
+.article-container img {
+	position: relative;
+	border-radius: 30%;
+	top: 0px;
+	object-fit:cover;
+}
+
+a .article-title-container {
+	display:inline-block;
+	position:relative;
+	margin-left: 10px;
+	width:50%;
+	right: 0px;
+}
+
+.admin-controls-container{
+	display:absolute;
+	right: 0px;
+	width: 200px;
+	height:30px;
+
+}
+
+/* page controls portion */
+
+.page-container {
+	position: relative;
+
+}
+
+.page-controlls {
+	position: relative;
+	margin: auto;
+	width: 50%;
+	right: 8%;
+	border: 1px solid blue;
+}
+
+.footer-container {
+    position: absolute;
+    bottom: -50;
+	background-color: #23302f;
+	width: 100%;
+	padding-left: 250px;
+  
+}
+
+.page-numbers{
+    margin:auto;
+    margin-top:20px;
+	width:60%;
+	right:5px;
+}
+
+#content-wrap {
+
+	padding: 2.5rem;
+	margin-bottom:20px;
+
+}

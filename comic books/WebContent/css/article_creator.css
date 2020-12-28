@@ -1,0 +1,51 @@
+@charset "ISO-8859-1";
+
+.article-body-container {
+	width: 60%;
+	margin: auto;
+	font-size: 20px;
+}
+
+.title-header {
+	display: inline-block;
+	position: relative;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 20%;
+}
+
+.footer {
+	display: inline-block;
+	position: relative;
+	bottom: -10px;
+	margin: auto;
+	width: 100%;
+}
+
+input[type=submit] {
+	display: inline-block;
+	position: relative;
+	color:white;
+	background: #292d32;
+}
+
+.article-body-container img{
+	position:relative;
+	max-height:500px;
+	max-width:700px;
+	border:1px solid orange;
+	left:250px;
+	
+}
+
+.article-body-container{
+	font:blue;
+	border:1px solid green;
+}
+
+.submit-button-container {
+	display: inline-block;
+	position: relative;
+	right: 0px;
+	margin-left: 93%;
+}
