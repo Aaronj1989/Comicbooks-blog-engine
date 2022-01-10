@@ -54,13 +54,14 @@ public class AdminController extends HttpServlet {
 
 		}
 	}
-
+      //takes admin to the article creator
 	public void createArticle(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/article_creator.jsp");
 		dispatcher.forward(request, response);
 	}
 
+//publishes article for users to read and adds article to the database. 
 	public void publishArticle(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
@@ -77,6 +78,7 @@ public class AdminController extends HttpServlet {
 		response.sendRedirect(request.getContextPath() + "/home");
 	}
 
+	// retrieves an article and allows admin to make changes and republish.
 	public void editArticle(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 

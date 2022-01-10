@@ -14,6 +14,7 @@
 <div class="header">
 <jsp:include page="./header.jsp" />
 </div>
+<!-- if article is being created the submit button will read to publish else it will ask to update -->
 <c:choose>
  <c:when test="${article == null}">
  <c:set var="formAction" value="${pageContext.request.contextPath}/admin/publish"/>

@@ -70,6 +70,6 @@ com.lumar.resources.URLMapListener
 </context-param>
 <context-param>
 <param-name>password</param-name>
-<param-value>student</param-value>
+<param-value>password</param-value>
 </context-param>
 </web-app>

@@ -6,7 +6,7 @@ import javax.servlet.ServletContextListener;
 
 import com.lumar.dao.ComicDAO;
 import com.lumar.models.ComicBook;
-
+//displays featured items  
 public class FeatureDisplayService implements ServletContextListener {
 
 	
